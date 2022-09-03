@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Quiz </title>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="list">
+   <ul>
+    <li><center><h1 style="color:white; font-family: Arial, Helvetica, sans-serif; "> Master Quiz</h1></center></li>
+     <li class="listright"><a href="index.html" ><button id="submit" style="float:right; width: 100px; margin-right: 20px;">Log Out</button></a> </li>
+   </ul>
+</div>
+
+
+  <div>
+ 
+ <div class="quiz-container">
+    <div class="question-number">
+       <h3  style=" font-family: Arial, Helvetica, sans-serif; ">Question <span class="question-num-value"></span> of <span class="total-question"></span></h3>
+    </div>
+    <div class="question" style=" font-family: Arial, Helvetica, sans-serif; ">
+   
+    </div>
+    <div class="options"  style=" font-family: Arial, Helvetica, sans-serif; ">
+       <div id="1" class="select1" onclick="check(this)"></div>
+       <div id="2" class="select2" onclick="check(this)"></div>
+       <div id="3" class="select3" onclick="check(this)"></div>
+       <div id="4" class="select4" onclick="check(this)"></div>
+    </div>
+    <div class="button">
+       <button type="button" class="btn" onclick="next()"  style=" font-family: Arial, Helvetica, sans-serif; ">Next</button>
+    </div>
+    <div class="answers-tracker" >
+     
+    </div>
+ </div>
+
+ <div class="quiz-over">
+   <div class="box">
+     <h1 style=" font-family: Arial, Helvetica, sans-serif; ">
+       Good Try!<br>
+      You Got <span class="correct-answers"></span> out of <span class="total-question2"></span> answers correct! <br>
+      That's <span class="percentage"></span>
+     </h1>
+     <button type="button" onclick="tryAgain()">TryAgain</button>
+   </div>
+ </div>
+
+ <script src="js/script.js"></script>
+
+
+</body>
+</html>
